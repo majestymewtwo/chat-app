@@ -1,0 +1,140 @@
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f1f1f1;
+  color: #333;
+  height: 100%;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Chat container */
+.chat-container {
+  background: white;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sign-in form */
+.signin-form {
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+}
+
+.signin-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.signin-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.signin-form button {
+  width: 110%;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.signin-form button:hover {
+  background-color: #45a049;
+}
+
+/* Chat header */
+.chat-header {
+  padding: 15px;
+  background: #4CAF50;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Messages area */
+.messages-container {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Message bubbles */
+.message {
+  max-width: 75%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 12px;
+  word-break: break-word;
+  font-size: 1rem;
+}
+
+.message.own {
+  background-color: #DCF8C6;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.message.other {
+  background-color: #eee;
+  align-self: flex-start;
+}
+
+.message-author {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.message-content {
+  font-size: 1rem;
+}
+
+/* Message form */
+.message-form {
+  display: flex;
+  padding: 15px;
+  border-top: 1px solid #ddd;
+}
+
+.message-form input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px 0 0 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  border-right: none;
+}
+
+.message-form button {
+  padding: 12px 20px;
+  border-radius: 0 8px 8px 0;
+  border: 1px solid #4CAF50;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.message-form button:hover {
+  background-color: #45a049;
+}
